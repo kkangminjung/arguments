@@ -7,7 +7,7 @@
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;background:#101113;color:#fff;min-height:100%;font-family:Arial,'Apple SD Gothic Neo','Malgun Gothic',sans-serif}body{min-height:100svh;display:grid;place-items:center;overflow-x:hidden}button{font:inherit;cursor:pointer;touch-action:manipulation}button:focus-visible{outline:3px solid #ffd456;outline-offset:5px}.camera{width:min(100%,490px);padding:12px 0 max(18px,env(safe-area-inset-bottom));transition:width .25s;position:relative}.camera.landscape{width:min(100%,950px,calc((100svh - 190px)*1.333))}.orientation{height:44px;display:flex;justify-content:center;align-items:center;gap:8px;margin-bottom:12px}.orientation button{border:0;background:transparent;border-radius:25px;color:#8b8e94;padding:8px 16px;font-size:13px;display:flex;align-items:center;gap:7px}.orientation button[aria-pressed="true"]{background:#27282c;color:#f4d96a}.orientation svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.7}.viewfinder{position:relative;width:100%;aspect-ratio:3/4;overflow:hidden;background:#78cce3;touch-action:none;cursor:crosshair;isolation:isolate}.landscape .viewfinder{aspect-ratio:4/3}#scene{width:100%;height:100%;display:block}.grid{position:absolute;inset:0;pointer-events:none;opacity:.23;background:linear-gradient(to right,transparent calc(33.333% - .5px),#fff6 33.333%,transparent calc(33.333% + .5px),transparent calc(66.666% - .5px),#fff6 66.666%,transparent calc(66.666% + .5px)),linear-gradient(to bottom,transparent calc(33.333% - .5px),#fff6 33.333%,transparent calc(33.333% + .5px),transparent calc(66.666% - .5px),#fff6 66.666%,transparent calc(66.666% + .5px))}.zoom{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:6px;background:#12151869;backdrop-filter:blur(9px);padding:5px;border-radius:30px}.zoom button{border:0;width:39px;height:39px;border-radius:50%;background:#1118;color:#fff;font-size:13px;font-weight:600;padding:0}.zoom button[aria-pressed="true"]{color:#ffdc65;background:#13191dbb;font-size:16px}.zoom button[aria-pressed="true"]::after{content:'×';font-size:10px;margin-left:1px}.controls{height:108px;display:flex;align-items:center;justify-content:center;position:relative}#shutter{height:78px;width:78px;border:3px solid #fff;border-radius:50%;background:transparent;padding:4px;position:relative}#shutter::after{content:'';display:block;border-radius:50%;height:100%;width:100%;background:#fff;transition:transform .1s}#shutter:active::after{transform:scale(.89)}.flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none;z-index:6}.flash.fire{animation:flash .24s ease-out}@keyframes flash{0%{opacity:.95}100%{opacity:0}}#focus-box{position:absolute;width:64px;height:64px;pointer-events:none;border:1.5px solid #ffe56b;transform:translate(-50%,-50%) scale(1);opacity:0;z-index:3;transition:opacity .25s,transform .2s}#focus-box::before,#focus-box::after{content:'';position:absolute;background:#ffe56b}#focus-box::before{width:8px;height:1px;left:calc(50% - 4px);top:50%}#focus-box::after{height:8px;width:1px;top:calc(50% - 4px);left:50%}#focus-box.active{opacity:1;transform:translate(-50%,-50%) scale(.85)}.review{position:fixed;inset:0;z-index:20;background:#101113;display:flex;align-items:center;justify-content:center;padding:22px;cursor:pointer}.review[hidden]{display:none}.print{display:flex;flex-direction:column;align-items:center;gap:0;max-width:94vw;max-height:94svh;background:none;padding:0;box-shadow:none;transform:none}.print img{display:block;max-width:94vw;max-height:calc(78svh - 110px);object-fit:contain}
 @media(min-width:600px){.camera{padding-top:20px}.viewfinder{border-radius:5px}.camera:not(.landscape){width:min(440px,calc((100svh - 190px)*.75))}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}@media(max-height:600px)and(min-width:650px){.camera.landscape{max-width:calc((100svh - 160px)*1.333)}.orientation{margin:0;height:35px}.controls{height:85px}#shutter{width:65px;height:65px}.landscape .viewfinder{max-height:none}}
 
-[hidden]{display:none!important}.intro,.ending{min-height:100svh;width:100%;background:#faf5e8;color:#34324e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:35px 22px;text-align:center}.intro h1{font-size:clamp(24px,5vw,34px);line-height:1.5;letter-spacing:-1.3px;margin:28px 0}.friend-card{width:200px;height:245px;background:#bae7db;border:0;box-shadow:none;transform:none;position:relative;border-radius:4px}.friend-card canvas{width:100%;height:100%;object-fit:contain}.card-tape{position:absolute;left:calc(50% - 39px);top:-20px;width:78px;height:27px;background:#f5cc70ba;transform:rotate(8deg)}.intro button,.ending button{border:0;border-bottom:5px solid #cc5e25;border-radius:17px;background:#ff833d;color:#fff;padding:16px 42px;font-size:19px;font-weight:800;letter-spacing:-.4px}.intro button:active,.ending button:active{transform:translateY(3px);border-bottom-width:2px}#photo-caption{font-size:14px;font-weight:700;color:#fff;margin:18px 0 1px;line-height:1.65;text-align:center;white-space:pre-line}.eyebrow{letter-spacing:3px;font-size:11px;color:#9e987f}.ending h1{font-size:clamp(24px,5vw,35px);letter-spacing:-1.5px}.album{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;width:min(850px,100%);margin:20px 0 35px}.album figure{margin:0;width:145px;background:none;padding:0;box-shadow:none;transform:none}.album img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}.album figcaption{font-size:12px;font-weight:bold;margin-top:8px}.album img{cursor:pointer}@media(max-width:450px){.album{gap:12px}.album figure{width:calc(50% - 10px)}}
+[hidden]{display:none!important}.intro,.ending{min-height:100svh;width:100%;background:#faf5e8;color:#34324e;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:35px 22px;text-align:center}.intro h1{font-size:clamp(24px,5vw,34px);line-height:1.5;letter-spacing:-1.3px;margin:28px 0}.friend-card{width:200px;height:245px;background:transparent;border:0;box-shadow:none;transform:none;position:relative;border-radius:4px}.friend-card canvas{width:100%;height:100%;object-fit:contain}.card-tape{position:absolute;left:calc(50% - 39px);top:-20px;width:78px;height:27px;background:#f5cc70ba;transform:rotate(8deg)}.intro button,.ending button{border:0;border-bottom:5px solid #cc5e25;border-radius:17px;background:#ff833d;color:#fff;padding:16px 42px;font-size:19px;font-weight:800;letter-spacing:-.4px}.intro button:active,.ending button:active{transform:translateY(3px);border-bottom-width:2px}#photo-caption{font-size:14px;font-weight:700;color:#fff;margin:18px 0 1px;line-height:1.65;text-align:center;white-space:pre-line}.eyebrow{letter-spacing:3px;font-size:11px;color:#9e987f}.ending h1{font-size:clamp(24px,5vw,35px);letter-spacing:-1.5px}.album{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;width:min(850px,100%);margin:20px 0 35px}.album figure{margin:0;width:145px;background:none;padding:0;box-shadow:none;transform:none}.album img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}.album figcaption{font-size:12px;font-weight:bold;margin-top:8px}.album img{cursor:pointer}@media(max-width:450px){.album{gap:12px}.album figure{width:calc(50% - 10px)}}
 #next-photo{display:block;margin:14px auto 0;border:0;border-bottom:4px solid #cc5e25;border-radius:12px;background:#ff833d;color:white;padding:12px 26px;font-size:16px;font-weight:800}#next-photo:active{transform:translateY(2px);border-bottom-width:2px}.review{cursor:default}
 </style>
 </head>
@@ -77,13 +77,54 @@ function resetStage(){
 function rr(c,x,y,w,h,r,fill){c.fillStyle=fill;c.beginPath();c.roundRect(x,y,w,h,r);c.fill();}
 function ellipse(c,x,y,rx,ry,fill){c.fillStyle=fill;c.beginPath();c.ellipse(x,y,Math.abs(rx),Math.abs(ry),0,0,Math.PI*2);c.fill();}
 function line(c,points,color,width){c.strokeStyle=color;c.lineWidth=width;c.lineCap='round';c.lineJoin='round';c.beginPath();points.forEach(([x,y],i)=>i?c.lineTo(x,y):c.moveTo(x,y));c.stroke();}
-const nativeFilter='filter' in ctx,softCanvas=document.createElement('canvas');
+const nativeFilter='filter' in ctx,softCache=new WeakMap();
+// Three separable box passes approximate a Gaussian without shrinking faces
+// into a handful of pixels on browsers without CanvasRenderingContext2D.filter.
+function boxBlurPass(src,dst,w,h,r,horizontal){
+ const length=horizontal?w:h,lines=horizontal?h:w,step=horizontal?4:w*4;
+ const divisor=r*2+1;
+ for(let line=0;line<lines;line++){
+  const base=horizontal?line*w*4:line*4;
+  for(let channel=0;channel<4;channel++){
+   let sum=0;
+   for(let k=-r;k<=r;k++)sum+=src[base+clamp(k,0,length-1)*step+channel];
+   for(let i=0;i<length;i++){
+    dst[base+i*step+channel]=sum/divisor;
+    sum+=src[base+Math.min(length-1,i+r+1)*step+channel]-src[base+Math.max(0,i-r)*step+channel];
+   }
+  }
+ }
+}
+function softwareBlur(image,w,blur){
+ const scale=Math.min(1,256/image.width,320/image.height);
+ const iw=Math.max(1,Math.round(image.width*scale)),ih=Math.max(1,Math.round(image.height*scale));
+ const radius=Math.max(1,Math.round(blur*iw/w)),pad=radius*3+2;
+ const key=`${iw},${ih},${radius},${image===backdrop?backdropKey:''}`;
+ let entries=softCache.get(image);
+ if(!entries){entries=new Map();softCache.set(image,entries);}
+ if(entries.has(key))return entries.get(key);
+ const surface=document.createElement('canvas');surface.width=iw+pad*2;surface.height=ih+pad*2;
+ const sc=surface.getContext('2d');sc.imageSmoothingEnabled=true;sc.drawImage(image,pad,pad,iw,ih);
+ const pixels=sc.getImageData(0,0,surface.width,surface.height),data=pixels.data;
+ const a=new Float32Array(data.length),b=new Float32Array(data.length);
+ // Premultiply before filtering to avoid dark outlines at transparent edges.
+ for(let i=0;i<data.length;i+=4){const alpha=data[i+3]/255;a[i]=data[i]*alpha;a[i+1]=data[i+1]*alpha;a[i+2]=data[i+2]*alpha;a[i+3]=data[i+3];}
+ for(let pass=0;pass<3;pass++){
+  boxBlurPass(a,b,surface.width,surface.height,radius,true);
+  boxBlurPass(b,a,surface.width,surface.height,radius,false);
+ }
+ for(let i=0;i<data.length;i+=4){const alpha=a[i+3];data[i+3]=alpha;if(alpha>.01){const unpremultiply=255/alpha;data[i]=a[i]*unpremultiply;data[i+1]=a[i+1]*unpremultiply;data[i+2]=a[i+2]*unpremultiply;}else{data[i]=data[i+1]=data[i+2]=0;}}
+ sc.putImageData(pixels,0,0);
+ const result={surface,iw,ih,pad};entries.set(key,result);
+ if(entries.size>3)entries.delete(entries.keys().next().value);
+ return result;
+}
 function drawSoft(image,x,y,w,h,blur){
  if(nativeFilter){ctx.filter=blur>.4?`blur(${blur.toFixed(2)}px)`:'none';ctx.drawImage(image,x,y,w,h);ctx.filter='none';return;}
- // Canvas filter is missing in some mobile browsers. Downsample then interpolate
- // so focus still changes without CSS filters, libraries or network resources.
  if(blur<.8){ctx.drawImage(image,x,y,w,h);return;}
- const scale=1/Math.max(1,blur*1.3);softCanvas.width=Math.max(2,Math.round(w*scale));softCanvas.height=Math.max(2,Math.round(h*scale));const sc=softCanvas.getContext('2d');sc.imageSmoothingEnabled=true;sc.drawImage(image,0,0,softCanvas.width,softCanvas.height);ctx.imageSmoothingEnabled=true;ctx.drawImage(softCanvas,x,y,w,h);
+ const {surface,iw,ih,pad}=softwareBlur(image,w,blur),sx=w/iw,sy=h/ih;
+ ctx.imageSmoothingEnabled=true;
+ ctx.drawImage(surface,x-pad*sx,y-pad*sy,surface.width*sx,surface.height*sy);
 }
 // A human owns exactly two arms. The same hand coordinates anchor its single
 // held item; gait/style/foreground flags never add another prop or hand.
